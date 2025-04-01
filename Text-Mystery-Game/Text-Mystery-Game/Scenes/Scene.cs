@@ -12,7 +12,7 @@ namespace Text_Mystery_Game.Scenes
         protected ConsoleKey input;
 
         //문제 1~5부터 선택지
-        //어떤 문제를 풀건지 콘솔 키 눌러 선택
+        //어떤 문제를 풀건지 콘솔 키 눌러 선택 or 타이틀 화면에서 1.게임시작 2.불러오기 3.게임종료 선택
         public abstract void Render();
         
         public void InputQuestionChoice()
@@ -25,7 +25,7 @@ namespace Text_Mystery_Game.Scenes
         //문제 출제 및 객관식 작성
         public abstract void Question();
         
-        public void InputCorrect()
+        public void Input()
         {
             input = Console.ReadKey(true).Key;
         }
